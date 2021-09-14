@@ -1,0 +1,5 @@
+Mesa - codigo, capacidade ocupacao, status de ocupacao, funcionario, (Cliente)
+Cliente - codigo, nome, quantidade de acompanhantes, (Comanda)
+Produtos - codigo, tipo, nome, valor 
+Comanda - codigo, (Produtos), 
+Pagamento - codigo, (Mesa), bool_troco, 
