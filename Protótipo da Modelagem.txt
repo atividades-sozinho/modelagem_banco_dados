@@ -1,5 +1,37 @@
-Mesa - codigo, capacidade ocupacao, status de ocupacao, funcionario, (Cliente)
-Cliente - codigo, nome, quantidade de acompanhantes, (Comanda)
-Produtos - codigo, tipo, nome, valor 
-Comanda - codigo, (Produtos), 
-Pagamento - codigo, (Mesa), bool_troco, 
+Mesa - codigo, capacidade ocupacao, status ocupacao, funcionario, codigo cliente
+Cliente - codigo, nome, número de acompanhantes, mesas ideais, codigo comanda
+Comanda - codigo, produtos, produtos escolhidos, valor da comanda
+Pagamento - codigo, valor total, troco, codigo comanda
+
+Sistema de controle de mesas/comandas
+
+O restaurante Dona Benta está crescendo e a proprietária entendeu que precisa da ajuda de um sistema para controlar as mesas 
+e comandas (consumo).
+
+
+O restaurante possui, atualmente, 15 mesas disponíveis. Sendo que as mesas nº de 1 a 8 possuem 4 lugares. As mesas 9, 10, 11 e 
+12 possuem 8 lugares. E, por fim, as mesas de 13, 14 e 15, possuem 12 lugares.
+
+Quando o cliente chega ao restaurante, deve informar a quantidade de lugares que precisa em uma mesa, o sistema deve 
+identificar as mesas livres com a quantidade de lugares compatíveis para a necessidade do cliente. Para otimizar o atendimento,
+ o Restaurante busca sempre deixar a menor quantidade possível de lugares sobrando, quando aloca um cliente.
+
+O sistema deve controlar a comanda dos clientes, permitindo abrir apenas uma conta simultânea para cada mesa. Cada comanda terá um número identificador único, que não pode se repetir. Nessa comanda, serão anotados os pedidos, que podem ser:
+
+Bebidas:
+Refrigerante Lata R$ 5,00
+Refrigerante 600ml R$ 8,00
+Refrigerante 1L R$ 10,00
+Refrigerante 2L R$ 18,00
+Suco 500ml 6,00
+Pratos
+Fixos
+Rodízio de pizza: R$ 25,00 por pessoa
+Porção de batata frita: R$ 20,00
+Porção de peixe: R$ 35,00
+Pratos do dia: deve ser informado todo dia, permitindo inclusive inserir mais de um. Cada prato deve ter Nome e Valor
+O sistema deve permitir ao operador fechar as contas dos clientes. Deve ser informada a mesa que estava ocupada, assim o sistema irá listar todo o consumo ligado à comanda e somar o total. Para simplificar, nesse momento será permitido apenas um pagamento, que pode ser acima do total da comanda. Quando o pagamento for acima do total, o sistema deverá calcular o troco. O pagamento não pode ser menor que o total da comanda.
+
+
+Após finalizar o pagamento, a mesa deve ser liberada para uso.
+
