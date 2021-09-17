@@ -1,0 +1,15 @@
+Criminosos - id, nome, cpf, rg, data de nascimento, crimes cometidos (Crimes), status de julgamento, status de prisão, vítima(s), pertence a quadrilha (FK - Vítimas), armas usadas (FK - Armas), (FK - responsável)  
+Vítimas - id, nome, cpf, rg, data de nascimento, crimes contra a vítima (Crimes), criminoso(s) responsável (FK - Criminosos), arma usada contra (FK - Armas), (FK - responsável)  
+Armas - id, fogo, brancas, sem armas   
+Crimes - id, crimes menores, crimes hediondos
+Responsável - id, delegado do caso, policial(is) do caso, juiz(es) do caso, Criminosos (FK), Vítimas (FK)
+
+1. Requisitos para um sistema de delegacia de polícia (IFC)
+Um pequeno país resolveu informatizar sua única delegacia de polícia para criar um banco de dados onde os criminosos deverão 
+ser fichados, sendo que as suas vítimas também deverão ser cadastradas.
+No caso de criminosos que utilizem armas, estas deverão ser cadastradas e relacionadas ao crime cometido para possível 
+utilização no julgamento do criminoso.
+O sistema, além de fornecer dados pessoais dos criminosos, das vítimas e das armas, também deve possibilitar saber:
+· Quais crimes um determinado criminoso cometeu, lembrando que um crime pode ser cometido por mais de um criminoso;
+· Quais crimes uma determinada vítima sofreu, lembrando que várias vítimas podem ter sofrido um mesmo crime;
+Após o sistema ser colocado em funcionamento, serão definidos relatórios e estatíticas de acordo com a solicitação do chefe da delegacia.
