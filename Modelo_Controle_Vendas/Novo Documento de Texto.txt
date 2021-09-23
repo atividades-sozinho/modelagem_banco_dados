@@ -1,0 +1,5 @@
+servicos - codigo, idcliente, idfuncionario, idtipo, data
+clientes - codigo, nome, endereco, telefone
+funcionarios - codigo, idcategoria, nome, endereco, telefone
+categorias - codigo, salario, nome
+tipos - codigo, nome
